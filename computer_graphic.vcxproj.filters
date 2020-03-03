@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="graphic">
+      <UniqueIdentifier>{4e6b9aee-c74a-4e3f-af85-a923bcd29b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphic\detail">
+      <UniqueIdentifier>{79ed0937-dd8c-4645-ac74-dc3e4a1ecf40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{4bab8343-9621-4072-9c13-28912a8f64c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\detail">
+      <UniqueIdentifier>{520f4ec2-9f2f-4fb6-81f7-9444a1116b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>include\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicAlgorithm.cpp">
+      <Filter>include\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="geometery.cpp">
+      <Filter>graphic\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>graphic\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>graphic\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="point.cpp">
+      <Filter>graphic\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="Region.cpp">
+      <Filter>graphic\detail</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="initwindow.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="frameshadow.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicAlgorithm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="geometery.h">
+      <Filter>graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="point.h">
+      <Filter>graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Region.h">
+      <Filter>graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>math</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
