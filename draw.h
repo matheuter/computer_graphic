@@ -15,6 +15,11 @@ public:
     void glDrawLine();
     void glDrawPoint();
     void DrawAngle(int angle);
-    void Rander();
+    void Transformation();
+    void Scaling(GLfloat scaling_fact_x,
+                 GLfloat scaling_fact_y,
+                 GLfloat scaling_fact_z
+                );
+
 };
 

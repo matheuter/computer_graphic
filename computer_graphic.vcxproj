@@ -170,27 +170,17 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\wang\OpenGL\include\glad.c" />
     <ClCompile Include="draw.cpp" />
-    <ClCompile Include="geometery.cpp" />
     <ClCompile Include="GraphicAlgorithm.cpp" />
-    <ClCompile Include="Label.cpp" />
-    <ClCompile Include="Line.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="point.cpp" />
-    <ClCompile Include="Region.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\wang\OpenGL\include\GLAD\glad.h" />
     <ClInclude Include="draw.h" />
-    <ClInclude Include="frameshadow.h" />
-    <ClInclude Include="geometery.h" />
     <ClInclude Include="GraphicAlgorithm.h" />
-    <ClInclude Include="initwindow.h" />
-    <ClInclude Include="Label.h" />
-    <ClInclude Include="Line.h" />
     <ClInclude Include="Matrix.h" />
-    <ClInclude Include="point.h" />
-    <ClInclude Include="Region.h" />
-    <ClInclude Include="Shader.h" />
+    <ClInclude Include="shader.hpp" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

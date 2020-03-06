@@ -3,7 +3,7 @@
 
 OpenGLTest::OpenGLTest()
 {
-    m_matrix = Matrix<GLfloat>(3,1,1);
+    m_matrix = Matrix<GLfloat>(4,1,1);
     m_matrix(1, 1) = 0.2;
     m_matrix(2, 1) = 0.3;
     m_matrix(3, 1) = 1.0;
@@ -30,12 +30,14 @@ int n = 0;
 void OpenGLTest::DrawAngle(int angle)
 {
     std::vector<GLfloat> a = {
-        cosf(angle * pi / 180), -sinf(angle * pi / 180), 0.0,
-        sinf(angle * pi / 180), cosf(angle * pi / 180), 0,
-        0,0,1.0f
+        cosf(angle * pi / 180), -sinf(angle * pi / 180), 0.0, 0,
+        sinf(angle * pi / 180), cosf(angle * pi / 180), 0,0,
+        0,0,1.0f,0,
+        0,0,0,1
+
     };
 
-    Matrix<GLfloat> mat(3, 3, a);
+    Matrix<GLfloat> mat(4, 4, a);
     Matrix<GLfloat> m = mat * m_matrix;
     m = mat * m;
     glBegin(GL_LINES);
@@ -50,3 +52,4 @@ void OpenGLTest::DrawAngle(int angle)
         std::cout << m_matrix;
     }
 }
+

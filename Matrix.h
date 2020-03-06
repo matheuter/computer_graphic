@@ -9,10 +9,10 @@ template  <class T>
 class Matrix
 {
 private:
-	int m_cols;	
-	int m_rows;	
-	int m_size;	
-	T* m_pData;	
+	int m_cols;
+	int m_rows;
+	int m_size;
+	T* m_pData;
 	bool singular = false;//是否奇异
 public:
 	Matrix();													//默认构造函数
@@ -628,7 +628,7 @@ bool Matrix<T>::LUP_Descomposition(Matrix<double>& A, Matrix<double>& L, Matrix<
 			if (i != j) {
 				L(i, j) = A(i, j);
 			}
-			else {
+			else { 
 				L(i, j) = 1;
 			}
 		}
@@ -702,9 +702,20 @@ Matrix<double> Matrix<T>::inverse()
 
 #define Reflection(a,axis_x,axis_y,axis_z) {\
 		std::vector<int> vec= {  	\
-		axis_x, 0,      0,			\
-		0,      axis_y, 0,			\
-		0,      0,      axis_z	    \
+		axis_x, 0,      0,		0,	\
+		0,      axis_y, 0,		0,	\
+		0,      0,      axis_z, 0, \
+		0,0,0,1						\
 };									\
-a = Matrix(3, 3, vec);				\
+a = Matrix(4, 4, vec);				\
+}
+
+#define Translation(a,axis_x,axis_y,axis_z)\
+std::vector<int> vec = {				\
+1,0,0,axis_x		\
+0,1,0,axis_y		\
+0,0,1,axis_z		\
+0,0,0,1				\
+};					\
+a = Matrix(4, 4, vec);		\
 }
